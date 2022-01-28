@@ -1,0 +1,381 @@
+/*général*/
+
+body{
+    background-color: #212529;
+}
+/*HEADER*/
+
+h1{
+  font-family: 'Roboto', sans-serif ;
+  color:whitesmoke;
+  font-size: 30px;
+}
+
+a{
+  text-decoration: none;
+  color:rgb(247, 108, 108);
+}
+
+#dev{
+  font-family: 'Roboto', sans-serif ;
+  color:whitesmoke;
+  font-size: 15px;
+  margin-left: -400px;
+  margin-top: 80px;
+  font-style: italic;
+}
+
+.header{
+  margin-left:2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ul{
+  display: flex;
+  width:40%;
+  height: 60px;
+  margin-top: 40px;
+  gap: 30px;
+}
+
+#li{
+  color:whitesmoke;
+  font-family: 'Roboto', sans-serif ;
+  text-decoration: none;
+  height:auto;
+  cursor: pointer;
+  font-size:15px;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#li:after{
+  cursor: pointer;
+  content:"";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background:#47A5CA;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+#li:hover::after{
+  transform: scale(1.0);
+}
+
+#btn{
+  color:white;
+  background-color:#47A5CA;
+  font-size:15px;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  margin-top: -4px;
+  font-family: 'Roboto', sans-serif ;
+}
+
+#btn:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/*page accueil*/
+
+.img{
+    display: block;
+    width: 250px;
+    border-radius: 20px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.block{
+    display: flex;
+    margin-left: 20px;
+}
+
+.blockText{
+  background-color:whitesmoke;
+  border-radius: 20px;
+  height:570px;
+  width:400px;
+  margin-top: 60px;
+}
+
+.text{
+  color: #212529;
+  margin-left: 20px;
+  font-family: 'Roboto', sans-serif ;
+  display:block;
+  text-align:left;
+  margin-top: 20px;
+}
+
+#textblanc{
+  color: whitesmoke;
+  margin-left: 20px;
+  font-family: 'Roboto', sans-serif ;
+  display:block;
+  text-align:left;
+  margin-top: 20px;
+}
+
+#text{
+  margin-left:auto;
+}
+
+#btnParcours{
+  background-color:#47A5CA;
+  border: none;
+  font-size:15px;
+  border-radius: 5px;
+  width: 150px;
+  height: 30px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 150px;
+  margin-bottom: 60px;
+}
+
+#btnParcours:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+#btnAutre{
+  background-color:#47A5CA;
+  border: none;
+  font-size:15px;
+  border-radius: 5px;
+  width: 150px;
+  height: 30px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+#btnAutre:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#mots{
+  color:#63B4D4;
+}
+
+.rw-words{
+	display: inline;
+	text-indent: 5px;
+  margin-right: 50px;
+}
+.rw-words-1 span{
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+
+	-webkit-animation: rotateWord 18s linear infinite 0s;
+	-ms-animation: rotateWord 18s linear infinite 0s;
+	animation: rotateWord 18s linear infinite 0s;
+}
+.rw-words-1 span:nth-child(2) {
+    -webkit-animation-delay: 3s;
+	-ms-animation-delay: 3s;
+	animation-delay: 3s;
+
+}
+.rw-words-1 span:nth-child(3) {
+    -webkit-animation-delay: 6s;
+	-ms-animation-delay: 6s;
+	animation-delay: 6s;
+}
+.rw-words-1 span:nth-child(4) {
+    -webkit-animation-delay: 9s;
+	-ms-animation-delay: 9s;
+	animation-delay: 9s;
+}
+
+@-webkit-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -ms-transform: translateY(-30px); }
+	5% { opacity: 1; -ms-transform: translateY(0px);}
+    17% { opacity: 1; -ms-transform: translateY(0px); }
+	20% { opacity: 0; -ms-transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes rotateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+	20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.far{
+margin-right: 4px;
+}
+
+.WCS{
+  height: 30px;
+  margin-left: 40px;
+}
+
+#ecole{
+  color: white;
+  font-family: 'Roboto', sans-serif ;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.picto1{
+display: flex;
+flex-direction:row;
+justify-content: space-between;
+gap:100px;
+}
+
+.picto2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -50px;
+}
+
+.pictotext{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding-top: 70px;
+ gap:40px;
+}
+
+.titrepicto{
+display: flex;
+}
+
+.presbadges{
+display: flex;
+flex-direction: row;
+gap:50px;
+}
+
+.badge{
+  width:130px;
+  height: 120px;
+}
+
+#badgetitre{
+  color: white;
+  font-family: 'Roboto', sans-serif ;
+  font-size: 18px;
+  width: auto;
+  text-align: center;
+}
+
+
+/* Page réalisations */
+
+.WR{
+  width: 130px;
+  margin-left: 25px;
+}
+
+.WR:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.RHC{
+width: 200px;
+margin-left: 25px;
+}
+
+.RHC:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#descriptionProjet{
+  color: white;
+  margin-left: 20px;
+  font-family: 'Roboto', sans-serif ;
+  display:block;
+  text-align:left;
+  margin-top: 20px;
+}
+
+
+#github{
+  font-size:30px;
+  color:white;
+}
+
+#github:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  transition-duration: 1s;
+}
+
+/*page contact*/
+
+#txt{
+  color: white;
+  font-family: 'Roboto', sans-serif ;
+}
+
+.prolink:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  transition-duration: 1s;
+}
+
+/*page parcours*/
+
+.background{
+  height: 610px;
+  width: 450px;
+  background-color:whitesmoke;
+  border-radius: 20px;
+  margin-top:auto;
+  margin-left: 20px;
+}
+
+p{
+  color: black;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
+.pro{
+  width:130px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+
+.background2{
+  height: 610px;
+  width: 450px;
+  border-radius: 20px;
+  margin-top:auto;
+  margin-left: 20px;
+}
